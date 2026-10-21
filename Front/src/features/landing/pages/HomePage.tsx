@@ -1,5 +1,7 @@
 import ProductSegmentation from "../../../shared/components/ProductSegmentation";
+import LoginRegisterForm from "../../auth/components/LoginRegisterForm";
 import ProductOnSale from "../../products/components/ProductOnSale";
+import ProductsMegaMenu from "../../products/components/ProductsMegaMenu";
 import { useQueryProducts } from "../../products/hooks/useQueryProducts";
 import ProductSearch from "../../search/components/ProductSearch";
 import Brands from "../components/Brands";
@@ -26,6 +28,10 @@ const HomePage = () => {
   return (
     <div>
       <HeroSection />
+
+      {/* <LoginRegisterForm/> */}
+
+      {/* <ProductsMegaMenu/> */}
 
       {/* <ProductSearch /> */}
       <CategoryList />

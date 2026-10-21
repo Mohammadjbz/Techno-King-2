@@ -53,7 +53,10 @@ const ProductsMegaMenu = () => {
         </ul>
 
         <div className="flex flex-1 justify-between px-[0.5rem]">
-          <div className="text-primary-300">View all</div>
+          <ul>
+            <li>test1</li>
+            <li>test2</li>
+          </ul>
 
           <div className="flex gap-[1rem]">
             <div className="flex flex-col justify-center items-center  rounded shadow-[-2px_2px_20px_#7171711f]">
@@ -80,3 +83,6 @@ const ProductsMegaMenu = () => {
 };
 
 export default ProductsMegaMenu;
+
+
+

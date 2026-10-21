@@ -1,5 +1,5 @@
 import SearchIcon from "/icons/search-2.svg";
-import closehIcon from "/icons/close-circle.svg";
+import closeIcon from "/icons/close-circle.svg";
 import SearchPanelSugestions from "./SearchPanelSuggestions";
 import SearchPanelResults from "./SearchPanelResults";
 import { useEffect, useState } from "react";
@@ -71,7 +71,7 @@ const ProductSearch = ({ onClose }: ProductSearchProps) => {
             </button>
           </div>
           <button onClick={onClose} type="button">
-            <img src={closehIcon} alt="Close icon" />
+            <img src={closeIcon} alt="Close icon" />
           </button>
         </div>
 
