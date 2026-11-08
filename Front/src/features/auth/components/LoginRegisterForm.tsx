@@ -10,9 +10,10 @@ import { tokenStorage } from "../api/tokenStorage";
 
 interface LoginRegisterFormProps {
   onClose: () => void;
+  onSuccess: () => void;
 }
 
-const LoginRegisterForm = ({ onClose }: LoginRegisterFormProps) => {
+const LoginRegisterForm = ({ onClose, onSuccess }: LoginRegisterFormProps) => {
   const [isRegistered, setIsRegistered] = useState(true);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const LoginRegisterForm = ({ onClose }: LoginRegisterFormProps) => {
         rememberMe: data.keepLoggedIn,
       });
       tokenStorage.save(result);
-      onClose();
+      onSuccess();
       console.log("Success:", result);
     } catch (error) {
       console.error("Login error:", error);
@@ -46,7 +47,7 @@ const LoginRegisterForm = ({ onClose }: LoginRegisterFormProps) => {
         password: data.password,
       });
       tokenStorage.save(result.data);
-      onClose();
+      onSuccess();
       console.log("Success:", result);
     } catch (error) {
       console.error("Register error:", error);
